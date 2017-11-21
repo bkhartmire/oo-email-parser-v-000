@@ -9,9 +9,10 @@ class EmailParser
     parser = EmailParser.new
     parser
   end
+  
   def parse(emails)
     data = emails.split(/[\s,]+/)
-    data.each {|email| @@EmailParser << email}
+    data.each {|email| @@all << email}
     @@all
   end
 
