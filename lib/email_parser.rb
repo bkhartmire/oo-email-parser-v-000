@@ -4,7 +4,7 @@
 # or whitespace (' ').
 class EmailParser
   @@all = []
-  attr_accessor :email
+  attr_accessor :emails
   def parse
     data = emails.split(/[\s,]+/)
     data.each {|email| @@all << email}
