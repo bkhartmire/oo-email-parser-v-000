@@ -9,7 +9,8 @@ class EmailParser
   def initialize(emails)
     @emails = emails
     @@all << self
-    
+  en
+
   def parse
     data = self.split(/[\s,]+/)
     data.each {|email| @@all << email}
