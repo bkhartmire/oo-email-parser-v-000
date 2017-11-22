@@ -12,7 +12,7 @@ class EmailParser
   end
 
   def parse
-    data = self.split(/[\s,]+/)
+    data = @@all.split(/[\s,]+/)
     data.each {|email| @@all << email}
     @@all
   end
