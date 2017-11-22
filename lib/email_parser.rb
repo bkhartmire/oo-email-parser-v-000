@@ -5,6 +5,10 @@
 class EmailParser
   @@all = []
   attr_accessor :emails
+  def initialize(emails)
+    @emails = emails
+    @@all << self
+    
   def parse
     data = self.split(/[\s,]+/)
     data.each {|email| @@all << email}
